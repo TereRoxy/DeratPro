@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #ffffff;
+  background: #0284c7;
+}
+
+:focus-visible {
+  outline: 3px solid #0d9488;
+  outline-offset: 3px;
+}
+
+.process-steps {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .process-steps::before {
+    position: absolute;
+    top: 1.7rem;
+    right: 16.5%;
+    left: 16.5%;
+    height: 1px;
+    background: linear-gradient(90deg, #bae6fd, #99f6e4);
+    content: '';
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) and (max-height: 520px) {
+  .hero-visual {
+    height: min(72vh, 340px);
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .hero-visual {
+    height: min(82vw, 350px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
