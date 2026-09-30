@@ -4,9 +4,9 @@ import { ContactForm } from './ContactForm';
 const contactDetails = [
   {
     label: 'Telefon',
-    value: '07xx xxx xxx',
+    value: '0727 222 532',
     Icon: PhoneCall,
-    href: 'tel:0740000000',
+    href: 'tel:0727222532',
   },
   {
     label: 'Email',
@@ -16,7 +16,7 @@ const contactDetails = [
   },
   {
     label: 'Zonă de intervenție',
-    value: 'Completează orașul și județul',
+    value: 'com. Măguri-Răcătău, jud. Cluj-Napoca',
     Icon: MapPin,
   },
 ];
@@ -93,9 +93,9 @@ export function ContactSection() {
             <div className="flex items-start gap-3 rounded-2xl border border-teal-200/70 bg-teal-50/70 p-5 dark:border-teal-900 dark:bg-teal-950/30">
               <ShieldCheck className="mt-0.5 shrink-0 text-brand-tealAccent dark:text-teal-300" size={21} />
               <p className="text-sm leading-6 text-teal-950 dark:text-teal-100">
-                <span className="font-bold">Personal autorizat.</span> Completează
-                aici numerele autorizațiilor și certificările valabile pentru
-                compania ta.
+                <span className="font-bold">Personal autorizat DSP și ANSVSA.</span> <br />
+                Sistemul de management al calității: SR EN ISO 9001:2008 <br />
+                Sistemul de management al mediului: SR EN ISO 14001:2005
               </p>
             </div>
           </aside>

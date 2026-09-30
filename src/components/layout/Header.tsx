@@ -17,8 +17,8 @@ interface HeaderProps {
 
 const navigation = [
   { label: 'Servicii', href: '#servicii' },
-  { label: 'De ce noi', href: '#avantaje' },
-  { label: 'Cum funcționează', href: '#proces' },
+  { label: 'De ce noi?', href: '#avantaje' },
+  { label: 'Cum funcționează?', href: '#proces' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -74,7 +74,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
           </button>
           <a
             className="hidden items-center gap-2 rounded-full bg-brand-bluePrimary px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-sky-900/10 transition hover:-translate-y-0.5 hover:bg-sky-700 sm:inline-flex dark:bg-brand-silkyBlue dark:text-brand-darkBg dark:hover:bg-sky-300"
-            href="tel:0740000000"
+            href="tel:0727222532"
           >
             <Phone size={16} />
             <span className="hidden xl:inline">Sună acum</span>
@@ -116,10 +116,10 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
             </div>
             <a
               className="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-brand-bluePrimary px-4 py-3 text-sm font-semibold text-white dark:bg-brand-silkyBlue dark:text-brand-darkBg"
-              href="tel:0740000000"
+              href="tel:0727222532"
             >
               <Phone size={16} />
-              Sună acum · 07xx xxx xxx
+              Sună acum · 0727222532
             </a>
           </div>
         </nav>

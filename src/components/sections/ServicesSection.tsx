@@ -15,7 +15,7 @@ const services = [
     description:
       'Tratamente precise prin nebulizare și pulverizare pentru insecte, cu soluții profesionale atent alese.',
     details: 'Insecte zburătoare și târâtoare',
-    Icon: SprayCan,
+    Icon: BugOff,
     tone: 'teal' as const,
   },
   {
@@ -23,7 +23,7 @@ const services = [
     description:
       'Igienizarea suprafețelor și a aerului pentru un mediu curat în locuințe, birouri și spații comerciale.',
     details: 'Proceduri adaptate fiecărui spațiu',
-    Icon: BugOff,
+    Icon: SprayCan,
     tone: 'amber' as const,
   },
 ];

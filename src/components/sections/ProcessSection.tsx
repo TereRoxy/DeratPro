@@ -9,7 +9,7 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Inspecție & plan',
+    title: 'Inspecție și plan',
     description: 'Evaluăm spațiul și stabilim tratamentul potrivit pentru tine.',
     Icon: SearchCheck,
   },

@@ -34,7 +34,7 @@ export function AdvantagesSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="avantaje">
         <div className="mb-12 max-w-2xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-tealAccent">
-            De ce DeratPro
+            De ce DeratPro?
           </p>
           <h2 className="mt-3 font-heading text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl dark:text-white">
             Profesionalism care se vede în fiecare detaliu

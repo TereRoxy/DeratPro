@@ -54,7 +54,7 @@ DeratPro transmite igienă, siguranță, eficiență clinică și profesionalism
 
 ### Header (Sticky Nav)
 
-* **Stânga:** Logo DeratPro (scut minimalist + font bold) + indicator vizual *"Autorizat DSP/ANSVSA"*.
+* **Stânga:** Logo DeratPro (Recipient spray minimalist cu bifa in interior + font bold) + indicator vizual *"Autorizat DSP/ANSVSA"*.
 * **Centru:** Link-uri rapide de navigare (*Servicii*, *De Ce Noi*, *Cum Funcționează*, *Contact*).
 * **Dreapta:** Comutator Light/Dark Mode + Buton apel rapid (`Tel: 07xx xxx xxx`).
 

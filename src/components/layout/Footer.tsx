@@ -9,7 +9,7 @@ export function Footer() {
           DeratPro
         </a>
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          © {new Date().getFullYear()} DeratPro. Înlocuiește datele demonstrative înainte de publicare.
+          © {new Date().getFullYear()} DeratPro. Această pagină este un concept de prezentare.
         </p>
         <a
           aria-label="Înapoi sus"

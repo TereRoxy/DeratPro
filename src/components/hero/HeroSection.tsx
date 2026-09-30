@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, BadgeCheck, Clock3, Phone, Zap } from 'lucide-react';
+import { ArrowDown, ArrowRight, BadgeCheck, Clock3, Zap } from 'lucide-react';
 import { ProtectionShieldCanvas } from './ProtectionShieldCanvas';
 
 export function HeroSection() {
@@ -20,12 +20,12 @@ export function HeroSection() {
           <h1 className="font-heading text-[clamp(2.55rem,7vw,5.2rem)] font-extrabold leading-[1.06] tracking-[-0.055em] text-brand-navy dark:text-white">
             Mediu purificat și sigur.
             <span className="mt-1 block text-brand-bluePrimary dark:text-brand-silkyBlue">
-              Fără riscuri.
+              Fără riscuri. De la macro la micro.
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 dark:text-slate-300">
-            Deratizare, dezinsecție și dezinfecție realizate de profesioniști,
-            cu substanțe avizate și garanție pe contract.
+            Deratizare, dezinsecție și dezinfecție realizate prompt de profesioniști,
+            la cele mai înalte standarde.
           </p>
           <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row">
             <a
@@ -35,13 +35,7 @@ export function HeroSection() {
               Solicită evaluare gratuită
               <ArrowRight size={17} />
             </a>
-            <a
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white/80 px-5 py-3 text-sm font-bold text-brand-navy transition hover:border-brand-bluePrimary hover:text-brand-bluePrimary dark:border-slate-600 dark:bg-slate-800/70 dark:text-white dark:hover:border-brand-silkyBlue dark:hover:text-brand-silkyBlue"
-              href="tel:0740000000"
-            >
-              <Phone size={16} />
-              Sună-ne acum
-            </a>
+
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-slate-600 dark:text-slate-300">
             <span className="inline-flex items-center gap-2">
