@@ -127,3 +127,7 @@ refa logo-ul pe varianta dark sa aiba background dark. foloseste varianta de log
 ## AI Collaboration and Workflow
 
 GitHub Copilot Agent was used to generate the project template and implement basic contact-form validation, following the project instructions in [AGENTS.md](AGENTS.md) and design requirements in [DESIGN.md](DESIGN.md). AI assistance also helped accelerate repetitive markup and Tailwind CSS styling, draft TypeScript interfaces, and review accessibility details such as `aria-describedby` associations and visible focus states. Suggestions were reviewed and adapted to the project.
+
+## License
+
+Copyright (c) 2026 TereRoxy. All rights reserved. See [LICENSE](LICENSE) for details.
