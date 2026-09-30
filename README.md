@@ -28,6 +28,15 @@ npm run preview
 
 The build runs the TypeScript project checks and creates the production bundle in `dist/`. The preview command serves that bundle locally.
 
+### Quality checks
+
+```bash
+npm run lint
+npm test
+```
+
+GitHub Actions runs linting, tests, and the production build for pushes and pull requests.
+
 ## What It Uses
 
 - **React 19** for the user interface, with **TypeScript** for typed components and utilities.

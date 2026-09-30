@@ -52,7 +52,7 @@ export function Footer() {
             <h2 className="font-heading text-sm font-bold text-brand-navy dark:text-white">Informarea consumatorilor</h2>
             <ul className="mt-4 space-y-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
               <li>
-                <a className="transition hover:text-brand-bluePrimary dark:hover:text-brand-silkyBlue" href="https://anpc.ro/" rel="noreferrer" target="_blank">
+                <a className="transition hover:text-brand-bluePrimary dark:hover:text-brand-silkyBlue" href="https://eservicii.anpc.ro/" rel="noreferrer" target="_blank">
                   ANPC
                 </a>
               </li>

@@ -1,6 +1,13 @@
+import { lazy, Suspense } from 'react';
 import { ArrowDown, ArrowRight, BadgeCheck, Clock3, Zap } from 'lucide-react';
 import { HeroParticles } from './HeroParticles';
-import { ProtectionShieldCanvas } from './ProtectionShieldCanvas';
+import { ProtectionShieldFallback } from './ProtectionShieldFallback';
+
+const ProtectionShieldCanvas = lazy(() =>
+  import('./ProtectionShieldCanvas').then(({ ProtectionShieldCanvas: Canvas }) => ({
+    default: Canvas,
+  })),
+);
 
 export function HeroSection() {
   return (
@@ -59,7 +66,9 @@ export function HeroSection() {
         </div>
         <div className="hero-visual relative mx-auto h-[min(78vw,390px)] w-full max-w-[520px] sm:h-[440px] lg:h-[520px] lg:max-w-none">
           <div aria-hidden="true" className="absolute inset-[8%] rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-500/10" />
-          <ProtectionShieldCanvas />
+          <Suspense fallback={<ProtectionShieldFallback />}>
+            <ProtectionShieldCanvas />
+          </Suspense>
           <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-white/70 bg-white/80 px-4 py-2 text-xs font-semibold text-slate-600 shadow-soft backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-300 sm:bottom-5">
             <span className="size-2 rounded-full bg-brand-tealAccent shadow-[0_0_12px_rgba(13,148,136,0.8)]" />
             Scutul protecției moleculare

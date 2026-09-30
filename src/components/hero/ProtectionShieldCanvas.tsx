@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float } from '@react-three/drei';
 import * as THREE from 'three';
@@ -129,11 +129,25 @@ function MolecularShield() {
 }
 
 export function ProtectionShieldCanvas() {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(
+    () => typeof window !== 'undefined'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  );
+
+  useEffect(() => {
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => setPrefersReducedMotion(motionPreference.matches);
+
+    motionPreference.addEventListener('change', updatePreference);
+    return () => motionPreference.removeEventListener('change', updatePreference);
+  }, []);
+
   return (
     <div className="absolute inset-0" aria-hidden="true">
       <Canvas
         camera={{ position: [0, 0, 5.2], fov: 42 }}
         dpr={[1, 1.5]}
+        frameloop={prefersReducedMotion ? 'demand' : 'always'}
         gl={{ alpha: true, antialias: true, powerPreference: 'low-power' }}
         fallback={
           <div className="absolute inset-0 grid place-items-center">
