@@ -69,8 +69,8 @@ export function ContactForm() {
           Mulțumim pentru solicitare!
         </h3>
         <p className="mt-3 max-w-sm text-sm leading-6 text-slate-600 dark:text-slate-300">
-          Formularul a fost validat cu succes. Conectează-l la serviciul tău de
-          contact pentru a transmite solicitările echipei.
+          Aceasta este o demonstrație. Datele au fost validate, dar solicitarea
+          nu a fost trimisă sau salvată.
         </p>
         <button
           className="mt-6 text-sm font-semibold text-brand-bluePrimary underline-offset-4 hover:underline dark:text-brand-silkyBlue"
@@ -171,7 +171,7 @@ export function ContactForm() {
         <ArrowRight size={17} />
       </button>
       <p className="mt-4 text-xs leading-5 text-slate-500 dark:text-slate-400">
-        Datele tale sunt folosite doar pentru a răspunde solicitării.
+        Formular demonstrativ: datele nu sunt trimise sau stocate.
       </p>
     </form>
   );
