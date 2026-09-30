@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <!-- Favicon / App Icon DeratPro - Light Mode (High Resolution 512x512) -->
+  <defs>
+    <linearGradient id="favLightGradHi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="lightGlow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Container Fundal Light cu colțuri rotunjite (Squircle) -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#f0f9ff" stroke="#bae6fd" stroke-width="8" filter="url(#lightGlow)" />
+
+  <g id="spray-bottle-light">
+    <!-- Duza și mecanismul de pulverizare -->
+    <path d="M184 128 H304 V160 H184 Z" fill="#64748b" />
+
+    <!-- Cap pulverizator și trigger (trăgaci) -->
+    <path d="M240 88 C240 76 256 64 280 64 H320 C328 64 336 72 336 80 V128 H264 L240 88 Z" fill="#0284c7" />
+    <path d="M200 100 L160 92 C152 90 144 96 144 104 C144 112 152 118 160 120 L216 132" stroke="#0284c7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Maneta trăgaciului -->
+    <path d="M208 152 C184 176 180 208 192 224" stroke="#64748b" stroke-width="18" stroke-linecap="round" />
+
+    <!-- Corpul recipientului (Sticla DDD) -->
+    <path d="M216 168 H296 L336 240 C348 260 352 288 352 320 V392 C352 424 328 440 296 440 H216 C184 440 160 424 160 392 V320 C160 288 164 260 176 240 L216 168 Z" fill="url(#favLightGradHi)" />
+
+    <!-- Fereastră lichid / Reflexie curbură -->
+    <path d="M188 280 C188 256 200 240 216 212 H296 C312 240 324 256 324 280 V384 C324 404 308 416 288 416 H224 C204 416 188 404 188 384 V280 Z" fill="#0284c7" />
+
+    <!-- Bifa de confirmare / siguranță în cerc protector -->
+    <circle cx="256" cy="320" r="72" fill="#0f172a" />
+    <path d="M224 320 L248 344 L292 292" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Particule pulverizare fină (Spray Mist) -->
+    <circle cx="112" cy="80" r="8" fill="#0284c7" />
+    <circle cx="88" cy="104" r="10" fill="#38bdf8" />
+    <circle cx="100" cy="132" r="6" fill="#0284c7" />
+  </g>
+</svg>

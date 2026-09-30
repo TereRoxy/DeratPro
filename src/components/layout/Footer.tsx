@@ -1,11 +1,22 @@
-import { ArrowUp, ShieldCheck } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white py-6 dark:border-slate-800 dark:bg-brand-darkBgAlt">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center sm:flex-row sm:px-6 sm:text-left lg:px-8">
         <a className="inline-flex items-center gap-2 font-heading font-bold text-brand-navy dark:text-white" href="#top">
-          <ShieldCheck className="text-brand-bluePrimary dark:text-brand-silkyBlue" size={19} />
+          <img
+            alt=""
+            aria-hidden="true"
+            className="size-6 dark:hidden"
+            src="/resources/deratpro-icon-light.svg"
+          />
+          <img
+            alt=""
+            aria-hidden="true"
+            className="hidden size-6 dark:block"
+            src="/resources/deratpro-icon-dark.svg"
+          />
           DeratPro
         </a>
         <p className="text-xs text-slate-500 dark:text-slate-400">

@@ -4,7 +4,6 @@ import {
   Menu,
   Moon,
   Phone,
-  ShieldCheck,
   Sun,
   X,
 } from 'lucide-react';
@@ -38,9 +37,14 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
           aria-label="DeratPro, pagina principală"
           onClick={closeMenu}
         >
-          <span className="grid size-10 place-items-center rounded-xl bg-brand-bluePrimary text-white shadow-md shadow-sky-900/10 dark:bg-brand-silkyBlue dark:text-brand-darkBg">
-            <ShieldCheck size={23} strokeWidth={2.2} />
-          </span>
+          <img
+            alt=""
+            aria-hidden="true"
+            className="size-10 shrink-0"
+            src={theme === 'dark'
+              ? '/resources/deratpro-icon-dark.svg'
+              : '/resources/deratpro-icon-light.svg'}
+          />
           <span className="font-heading text-xl font-extrabold tracking-tight">
             Derat<span className="text-brand-bluePrimary dark:text-brand-silkyBlue">Pro</span>
           </span>
@@ -78,7 +82,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
           >
             <Phone size={16} />
             <span className="hidden xl:inline">Sună acum</span>
-            <span className="xl:hidden">07xx xxx xxx</span>
+            <span className="xl:hidden">Sună acum</span>
           </a>
           <button
             aria-controls="mobile-navigation"

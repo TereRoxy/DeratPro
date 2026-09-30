@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowRight, BadgeCheck, Clock3, Zap } from 'lucide-react';
+import { HeroParticles } from './HeroParticles';
 import { ProtectionShieldCanvas } from './ProtectionShieldCanvas';
 
 export function HeroSection() {
@@ -11,7 +12,8 @@ export function HeroSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 bg-hero-grid opacity-60 [mask-image:linear-gradient(to_bottom,black,transparent_85%)]"
       />
-      <div className="mx-auto grid min-h-[650px] max-w-7xl items-center gap-8 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-4 lg:px-8 lg:py-20">
+      <HeroParticles />
+      <div className="relative z-10 mx-auto grid min-h-[650px] max-w-7xl items-center gap-8 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-4 lg:px-8 lg:py-20">
         <div className="relative z-10 max-w-2xl">
           <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3.5 py-2 text-xs font-semibold leading-5 text-amber-900 sm:text-sm dark:border-amber-900/70 dark:bg-amber-950/40 dark:text-amber-200">
             <Zap className="shrink-0 fill-current" size={16} />
